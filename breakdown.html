@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample 3</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+	</head>
+	<body>
+
+	<!-- Navigation Starts -->
+    <div class="row">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+            	<ul class="nav navbar-nav">
+                	<li><a href="http://home.tobeneo.com/Comprehensive-Intro">Home</a></li>
+                	<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Interface for Teachers <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://home.tobeneo.com/Comprehensive-Problem-Statement/">Input for Problem Statement</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="http://home.tobeneo.com/Comprehensive-List-Tasks/">Input for Sub Tasks</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="http://home.tobeneo.com/Comprehensive-Input-Code/">Input for Code Structure</a></li>
+						</ul>
+			        </li>
+                	<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Interface for Students <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://home.tobeneo.com/Comprehensive-Sample1/">Sample Problem 1</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="http://home.tobeneo.com/Comprehensive-Sample2/">Sample Problem 2</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="active"><a>Sample Problem 3</a></li>
+						</ul>
+			        </li>
+                </ul>
+            </div>  
+        </nav>
+    </div>
+    <!-- Navigation Ends -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a class="btn btn-success" href="index.html" id="goBack"><< Problem Statement</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Problem Breakdown for Restarting the Game</h2>
+
+				<p><i><strong>This big problem is not suitable for breakdown because all the breakdowns have already been included in the problem statement</strong>. Students do not need to use any strategies to design their own solutions to the problem, and they just need to fill in some details.</i></p>
+
+				<p><i>Therefore, I only included part of a subproblem - restarting the game - here to illustrate the idea as is shown in other two sample problems: what is the effective approach to design solutions to the problem by using top-down strategies, assuming students were not given the breakdown information in the statement.</i></p>
+
+				<br>
+				<br>
+
+			</div>
+			<div class="task-layer col-sm-5">
+				<p class="steps" id="0"><span class="step"></span> <span><a class="query" href="#" target="_blank"><img src="img/link.png" width="15px"></a></span> <span><a href="#" target="_blank" class="codelink"><img src="img/github.png" width="20px"></a></span></p>
+			</div>
+
+			<div id="codeSnippet" class ="col-sm-7">
+				<pre class="prettyprint" id="codeGoesHere">
+/*-------------Class BlackJack---------------*/
+public class BlackJack {
+	public void restart() {
+		// Step 1
+		dealer.returnCardstoDeck(deck);
+		player.returnCardstoDeck(deck);
+
+		// Step 2
+		deck.shuffle();
+		
+		/*---Code for step 3 Omitted---*/
+	}
+}
+				</pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<a class="btn btn-success" href="submit.html" id="submit">>> Submit Your Assignment</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<hr>
+		<p>
+			Created by <a class="samples" href="http://tobeneo.com">Qiang Hao</a>; Powered by <a class="samples" href="http://getbootstrap.com/">&copy; BootStrap</a>
+		</p>
+	</div>
+
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/breakdown.js"></script>
+	</body>
+</html>

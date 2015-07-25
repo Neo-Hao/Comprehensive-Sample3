@@ -1,0 +1,28 @@
+/*-------------------Class Player---------------------*/
+public class Player {
+	// empty the player hand into the cards
+	// @param d deck that receives the cards
+	public void returnCardstoDeck(Deck d) {
+		Card[] toReturn = this.hand.emptyHand();
+		for(Card card:toReturn) {
+			d.addToBottom(card);
+		}
+	}
+}
+
+/*-------------Class Deck---------------*/
+public class Deck {
+	public void shuffle() {
+				
+		for (int i = 0; i < 100; i++) {
+			int target1 = randInt(0, numCardsInDeck - 1);
+			int target2 = randInt(0, numCardsInDeck - 1);
+			if (target1 != target2) {
+				swap(target1, target2);
+			} else {
+				target2 = randInt(0, numCardsInDeck - 1);
+				swap(target1, target2);
+			}
+		}
+	}
+}
